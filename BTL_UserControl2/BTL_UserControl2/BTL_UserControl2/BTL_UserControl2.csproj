@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +56,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControl\backgroud.xaml.cs">
+      <DependentUpon>backgroud.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\main.xaml.cs">
+      <DependentUpon>main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\menu.xaml.cs">
+      <DependentUpon>menu.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +77,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControl\backgroud.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +115,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\Add Link.png" />
+    <Resource Include="icons\Bookmark.png" />
+    <Resource Include="icons\Check Mark.png" />
+    <Resource Include="icons\Cut_16px.png" />
+    <Resource Include="icons\Cut_32px.png" />
+    <Resource Include="icons\Delete.png" />
+    <Resource Include="icons\Download from the Cloud.png" />
+    <Resource Include="icons\Left Arrow.png" />
+    <Resource Include="icons\Paste.png" />
+    <Resource Include="icons\Query Inner Join Right.png" />
+    <Resource Include="icons\Right Arrow.png" />
+    <Resource Include="icons\Share.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="magic\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
